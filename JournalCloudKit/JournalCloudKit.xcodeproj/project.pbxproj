@@ -9,20 +9,21 @@
 /* Begin PBXBuildFile section */
 		FC742C9223550AA700A89AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC742C9123550AA700A89AE8 /* AppDelegate.swift */; };
 		FC742C9423550AA700A89AE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC742C9323550AA700A89AE8 /* SceneDelegate.swift */; };
-		FC742C9623550AA700A89AE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC742C9523550AA700A89AE8 /* ViewController.swift */; };
 		FC742C9923550AA700A89AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC742C9723550AA700A89AE8 /* Main.storyboard */; };
 		FC742C9B23550AAC00A89AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC742C9A23550AAC00A89AE8 /* Assets.xcassets */; };
 		FC742C9E23550AAC00A89AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC742C9C23550AAC00A89AE8 /* LaunchScreen.storyboard */; };
 		FC742CAA23550ACE00A89AE8 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC742CA923550ACE00A89AE8 /* Journal.swift */; };
 		FC742CAF23550BCF00A89AE8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC742CAE23550BCF00A89AE8 /* CloudKit.framework */; };
 		FC742CB123550F7900A89AE8 /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC742CB023550F7900A89AE8 /* JournalController.swift */; };
+		FC742CB423551FC800A89AE8 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC742CB323551FC800A89AE8 /* EntryListTableViewController.swift */; };
+		FC742CB6235522F800A89AE8 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC742CB5235522F800A89AE8 /* DateExtension.swift */; };
+		FC742CB82355237C00A89AE8 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC742CB72355237C00A89AE8 /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC742C8E23550AA700A89AE8 /* JournalCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC742C9123550AA700A89AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC742C9323550AA700A89AE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC742C9523550AA700A89AE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC742C9823550AA700A89AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC742C9A23550AAC00A89AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC742C9D23550AAC00A89AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +32,9 @@
 		FC742CAC23550BC800A89AE8 /* JournalCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JournalCloudKit.entitlements; sourceTree = "<group>"; };
 		FC742CAE23550BCF00A89AE8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FC742CB023550F7900A89AE8 /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
+		FC742CB323551FC800A89AE8 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		FC742CB5235522F800A89AE8 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		FC742CB72355237C00A89AE8 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			children = (
 				FC742CA723550ABE00A89AE8 /* View Controllers */,
 				FC742CB22355126C00A89AE8 /* Model Controllers */,
+				FC742CB5235522F800A89AE8 /* DateExtension.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -98,7 +103,8 @@
 		FC742CA723550ABE00A89AE8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FC742C9523550AA700A89AE8 /* ViewController.swift */,
+				FC742CB323551FC800A89AE8 /* EntryListTableViewController.swift */,
+				FC742CB72355237C00A89AE8 /* EntryDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,10 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC742C9623550AA700A89AE8 /* ViewController.swift in Sources */,
 				FC742C9223550AA700A89AE8 /* AppDelegate.swift in Sources */,
+				FC742CB6235522F800A89AE8 /* DateExtension.swift in Sources */,
+				FC742CB423551FC800A89AE8 /* EntryListTableViewController.swift in Sources */,
 				FC742C9423550AA700A89AE8 /* SceneDelegate.swift in Sources */,
 				FC742CB123550F7900A89AE8 /* JournalController.swift in Sources */,
+				FC742CB82355237C00A89AE8 /* EntryDetailViewController.swift in Sources */,
 				FC742CAA23550ACE00A89AE8 /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
